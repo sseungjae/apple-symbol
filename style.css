@@ -15,5 +15,16 @@ body {
 .logo {
   color: white;
   font-size: 5em;
-  text-shadow: 0 0 50px salmon;
+  text-shadow: 0 0 50px salmon, 0 0 100px salmon, 0 0 150px salmon,
+    0 0 200px salmon, 0 0 250px salmon;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
 }
